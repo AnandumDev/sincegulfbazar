@@ -12,6 +12,7 @@ import Products from './components/Products'
 import About from './components/About'
 import Footer from './components/Footer'
 import AttarPage from './components/AttarPage'
+import WhatsAppButton from './components/WhatsAppButton'
 
 const App = () => {
   const [showAttarPage, setShowAttarPage] = useState(false);
@@ -40,6 +41,7 @@ const App = () => {
       <Products />
       <About />
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }
