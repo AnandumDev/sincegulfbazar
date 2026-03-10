@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FeaturedBanner = () => {
   return (
     <section className="py-12 bg-gray-900">
