@@ -11,7 +11,7 @@ const AttarCollection: React.FC<AttarCollectionProps> = ({ onExplore }) => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Image */}
-          <div className="rounded-2xl overflow-hidden shadow-2xl opacity-0 animate-[fadeInLeft_0.8s_ease-out_forwards] max-w-md mx-auto">
+          <div className="rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto" data-aos="fade-right">
             <img 
               src={athar} 
               alt="Attar Collection"
@@ -20,7 +20,7 @@ const AttarCollection: React.FC<AttarCollectionProps> = ({ onExplore }) => {
           </div>
           
           {/* Content */}
-          <div className="text-center md:text-left opacity-0 animate-[fadeInRight_0.8s_ease-out_0.2s_forwards]">
+          <div className="text-center md:text-left" data-aos="fade-left" data-aos-delay="200">
             <span className="inline-block bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
               EXCLUSIVE COLLECTION
             </span>

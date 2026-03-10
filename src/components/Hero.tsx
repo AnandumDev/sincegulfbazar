@@ -2,10 +2,10 @@ const Hero = () => {
   return (
     <section className="bg-gray-900 py-12">
       <div className="container mx-auto px-4">
-        <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl">
+        <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-3xl overflow-hidden shadow-2xl" data-aos="fade-up">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             {/* Left Content */}
-            <div className="p-8 md:p-16">
+            <div className="p-8 md:p-16" data-aos="fade-right" data-aos-delay="200">
               <span className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold mb-6">
                 NEW ARRIVAL
               </span>
@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
 
             {/* Right Image */}
-            <div className="h-full min-h-[400px] bg-cover bg-center" 
+            <div className="h-full min-h-[400px] bg-cover bg-center" data-aos="fade-left" data-aos-delay="300"
                  style={{backgroundImage: "url('https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=800&h=600&fit=crop')"}}>
             </div>
           </div>

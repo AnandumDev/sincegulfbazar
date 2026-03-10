@@ -41,7 +41,7 @@ const CategorySection = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12" data-aos="fade-up">
           Shop by Category
         </h2>
         
@@ -50,8 +50,9 @@ const CategorySection = () => {
             <a 
               key={category.id} 
               href={category.link}
-              className="flex flex-col items-center group opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
-              style={{animationDelay: `${index * 0.1}s`}}
+              className="flex flex-col items-center group"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
             >
               <div className="w-32 h-32 rounded-full overflow-hidden shadow-lg mb-4 border-4 border-gray-100 group-hover:border-blue-600 transition-all duration-300">
                 <img 

@@ -2,14 +2,14 @@ const BakhoorOudSection = () => {
   return (
     <section className="py-16 bg-gray-900">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Bakhoor & Oud Collection</h2>
           <p className="text-xl text-gray-300">Experience the authentic Arabian fragrance with our premium bakhoor and oud</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Bakhoor Card */}
-          <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative group overflow-hidden rounded-2xl shadow-2xl" data-aos="fade-right" data-aos-delay="100">
             <img 
               src="/images/bakhoor1.jpg" 
               alt="Premium Bakhoor"
@@ -27,7 +27,7 @@ const BakhoorOudSection = () => {
           </div>
 
           {/* Oud Card */}
-          <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
+          <div className="relative group overflow-hidden rounded-2xl shadow-2xl" data-aos="fade-left" data-aos-delay="200">
             <img 
               src="/images/bakhoor2.jpeg" 
               alt="Premium Oud"

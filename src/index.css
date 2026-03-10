@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  overflow-x: hidden;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

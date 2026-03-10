@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import CategorySection from './components/CategorySection'
@@ -14,12 +16,20 @@ import AttarPage from './components/AttarPage'
 const App = () => {
   const [showAttarPage, setShowAttarPage] = useState(false);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
   if (showAttarPage) {
     return <AttarPage onBack={() => setShowAttarPage(false)} />;
   }
 
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='min-h-screen bg-white overflow-x-hidden'>
       <Header />
       <Hero />
       <CategorySection />

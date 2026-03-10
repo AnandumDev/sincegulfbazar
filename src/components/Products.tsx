@@ -69,14 +69,14 @@ const Products = () => {
   return (
     <section id="products" className="py-16 bg-gray-800">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-amber-400 mb-4">Our Collection</h2>
           <p className="text-gray-300 text-lg">Handpicked treasures from the Arabian Gulf</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
-            <div key={product.id} className="bg-gray-900 border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:border-amber-600 transition-all duration-300 hover:-translate-y-2 opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]" style={{animationDelay: `${index * 0.1}s`}}>
+            <div key={product.id} className="bg-gray-900 border-2 border-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:border-amber-600 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay={index * 100}>
               <div className="h-64 overflow-hidden bg-gray-800">
                 <img 
                   src={product.image} 
