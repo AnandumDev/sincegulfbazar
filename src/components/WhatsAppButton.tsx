@@ -1,5 +1,5 @@
 const WhatsAppButton = () => {
-  const phoneNumber = "9544065036"; // Replace with actual number
+  const phoneNumber = "9562007654"; // Replace with actual number
   const message = "Hello! I'm interested in your products.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
