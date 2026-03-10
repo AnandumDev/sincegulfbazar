@@ -1,4 +1,5 @@
 import React from 'react';
+import athar from '../../public/Attar_Kashmiri_Oud_Kannauj.webp';
 
 interface AttarCollectionProps {
   onExplore: () => void;
@@ -12,7 +13,7 @@ const AttarCollection: React.FC<AttarCollectionProps> = ({ onExplore }) => {
           {/* Image */}
           <div className="rounded-2xl overflow-hidden shadow-2xl opacity-0 animate-[fadeInLeft_0.8s_ease-out_forwards] max-w-md mx-auto">
             <img 
-              src="/attar_kashmiri_Oud_Kannauj.webp" 
+              src={athar} 
               alt="Attar Collection"
               className="w-full h-80 object-cover"
             />
