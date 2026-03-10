@@ -44,7 +44,7 @@ const products = [
     name: 'Luxury Hookah',
     category: 'Hookah',
     price: '$125.99',
-    image: '/public/hukka.webp',
+    image: '/hukka.webp',
     description: 'Handcrafted traditional hookah'
   },
   {
