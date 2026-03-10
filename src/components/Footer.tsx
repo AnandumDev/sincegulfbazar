@@ -40,8 +40,22 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 Since Gulf Bazar. All rights reserved.</p>
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex justify-center mb-8">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.941009858539!2d75.9915485!3d11.325376800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6422a93973ba5%3A0xe4cffcb28bb0acaa!2sGulf%20Bazar%2C!5e1!3m2!1sen!2sin!4v1773127583248!5m2!1sen!2sin" 
+              width="400" 
+              height="300" 
+              style={{border: 0}} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="text-center text-gray-400">
+            <p>&copy; 2024 Since Gulf Bazar. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
